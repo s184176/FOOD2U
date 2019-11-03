@@ -1,0 +1,692 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+}  
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles 
+   ========================================================================== */
+
+   body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:lightblue;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .top-nav ul{
+    display:grid;
+    grid-gap: 20px;
+    padding:0;
+    list-style:none;
+    grid-template-columns: 0.5fr repeat(3, 1fr);  
+    border-width: 50px;
+    background: lightblue;
+    min-height: 100px;
+    }
+  
+    .top-nav a{
+      background-color: #333;
+      display: block; 
+      text-decoration: none; /* inga underlines */
+      padding: 1em 2em;
+      text-align: center;
+      color:#fff;
+      text-transform: uppercase; /* text stora bokstäver */
+      font-size: 1.1rem;
+      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);; /* ger illusion av en box/ruta */
+      margin:10px;
+  }
+
+  .top-nav a:hover {
+    background-color:#666;
+    color:#fff;
+    }
+
+  #logga {
+    background:url("https://image.freepik.com/free-photo/top-view-wooden-background_23-2148234292.jpg");
+    display: block; 
+    text-decoration: none; /* inga underlines */
+    padding: 1em 2em;
+    text-align: center;
+    color:	white;
+    text-transform: uppercase; /* text stora bokstäver */
+    font-size: 1.1rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);; /* ger illusion av en box/ruta */
+    margin:10px;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    max-width: 100%;
+    }
+
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+  }
+  
+  .btn:hover {
+    background: #eaeaea;
+    color: #333;
+  }
+  
+  /* Header Showcase */
+  
+  #showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #showcase .bg-image {
+    position: absolute;
+    background: #333
+    url("https://image.freepik.com/free-photo/large-laid-table-different-dishes-whole-family-day-off_127425-26.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    /*opacity: 0.4;*/
+  }
+
+  #showcase .bg-image2 {
+    position: absolute;
+    background: #333
+    url("https://image.freepik.com/free-photo/wooden-table-product-background_53876-89448.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    /*opacity: 0.4;*/
+  }
+
+  #showcase .bg-image3 {
+    position: absolute;
+    background: #333
+    url("https://image.freepik.com/free-photo/people-working-call-center_23-2148094789.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    /*opacity: 0.4;*/
+  }
+
+  
+  #showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  
+  #showcase .content-wrap,
+  #section-a .content-wrap {
+    padding: 0 1.5em;
+  }
+  
+  /* Section A */
+  
+  #section-a {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+  }
+  
+  /* Section B */
+  
+  #section-b {
+    padding: 2em 1em 1em;
+  }
+  
+  #section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+  }
+  
+  .card-content {
+    padding: 1.5em;
+  }
+
+  /*Section C*/
+
+  #section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+  }
+
+  
+/*Betalningsinfo*/
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    color: black;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+
+  .fa-cc-visa{
+    color:navy;
+  }
+
+  .fa-cc-amex{
+    color:blue;
+  }
+  
+  .fa-cc-mastercard{
+    color:red;
+  }
+  
+  .fa-cc-discover{
+    color:orange;
+  }
+
+  .container-betalning {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn2 {
+    background-color:grey;
+    color:white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn2:hover {
+    background-color: lightblue;
+  }
+  
+  .price {
+    color:black;
+  }
+
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+
+    .top-nav ul{
+      grid-template-columns: 1fr;
+     }
+  }
+ 
+  /* Footer */
+
+  .icons{
+    display: inline-block;
+    padding: 10px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: rgb(52, 111, 179);
+  color: #fff;
+}
+.fa-instagram{
+  background: rgb(179, 120, 52);
+  color: #fff;
+ 
+}
+
+.fa:hover{
+  color: #fff;
+  background: #666;
+}
+  
+footer{
+  margin-top: 2rem;
+  background:rgb(13, 24, 48);
+  color:#fff;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+  
+  /* Media Queries */
+  
+  @media (min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+  
+    #section-a .content-text {
+      columns: 2;
+      column-gap: 2em;
+    }
+  
+    #section-a .content-text p {
+      padding-top: 0;
+    }
+  
+    .content-wrap,
+    #section-b ul {
+      grid-column: 2/4;
+    }
+  
+    .box,
+    #main-footer div {
+      grid-column: span 2;
+    }
+  
+    #section-b ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    #section-b li {
+      width: 31%;
+    }
+  }
+  
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
