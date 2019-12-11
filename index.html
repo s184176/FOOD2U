@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,19 +27,20 @@
   <!--KOD BÖRJAR HÄR-->
   <nav class="top-nav">
     <ul>
-        <li><a id="logga" href="index.html">FOOD2U.com</a></li>
-        <li><a href="handla.html">Handla hos oss</a></li>
-        <li><a href="omoss.html">Om oss</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li aria-label="logga"><a id="logga" href="index.html">FOOD2U.com</a></li>
+        <li aria-label="handla hos oss"><a href="handla.html">Handla hos oss</a></li>
+        <li aria-label="om oss"><a href="omoss.html">Om oss</a></li>
+        <li aria-label="kontakta oss"><a href="kontakt.html">Kontakt</a></li>
     </ul>
 </nav>
+
 
   <header id="showcase" class="grid">
     <div class="bg-image"></div>
     <div class="content-wrap">
-      <h1>Välkommen till FOOD2U</h1>
+      <h1 aria-label="välkommen till FOOD2U">Välkommen till FOOD2U</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam eos saepe asperiores dolorum.</p>
-      <a href="#section-b" class="btn">Läs mer</a>
+      <a aria-label="läs mer" href="#section-b" class="btn">Läs mer</a>
     </div>
   </header>
   
@@ -48,7 +49,7 @@
     <!-- Section A -->
     <section id="section-a" class="grid">
       <div class="content-wrap">
-        <h2 class="content-title">Snabb leverans direkt till dörren</h2>
+        <h2 aria-label="Snabb leverans direkt till dörren" class="content-title">Snabb leverans direkt till dörren</h2>
         <div class="content-text">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi
             animi totam, accusantium, ex eius quia, natus quo?</p>
@@ -60,7 +61,7 @@
     <!-- Section C -->
   <section id="section-c" class="grid">
     <div class="content-wrap">
-      <h2 class="content-title">Betala enkelt med Klarna</h2>
+      <h2 aria-label="Betala enkelt med Klarna" class="content-title">Betala enkelt med Klarna</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
     </div>
   </section>
@@ -75,6 +76,7 @@
 
   <!--KOD SLUT-->
 
+ 
 </body>
 
 </html>
