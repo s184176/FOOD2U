@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,10 +27,10 @@
   <!--KOD BÖRJAR HÄR-->
   <nav class="top-nav">
     <ul>
-        <li><a id="logga" href="index.html">FOOD2U.com</a></li>
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="omoss.html">Om oss</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+      <li aria-label="logga"><a id="logga" href="index.html">FOOD2U.com</a></li>
+      <li aria-label="handla hos oss"><a href="handla.html">Handla hos oss</a></li>
+      <li aria-label="om oss"><a href="omoss.html">Om oss</a></li>
+      <li aria-label="kontakta oss"><a href="kontakt.html">Kontakt</a></li>
     </ul>
 </nav>
 
@@ -43,9 +43,9 @@
         <div class="card">
           <img src="https://image.freepik.com/free-photo/colorful-food-groceries-white-countertop_8087-2209.jpg" alt="bild på matkasse">
           <div class="card-content">
-            <h3 class="card-title">Furukt och grönt</h3>
+            <h3 aria-label="Frukt och grönt" class="card-title">Frukt och grönt</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
-            <a href="404.html" class="btn">Lägg i kundkorg</a>
+            <a aria-label="lägg i kundkorg" href="404.html" class="btn">Lägg i kundkorg</a>
           </div>
         </div>
       </li>
@@ -53,7 +53,7 @@
         <div class="card">
           <img src="https://image.freepik.com/free-photo/zero-waste-shopping-concept_136595-295.jpg" alt="bild på mat">
           <div class="card-content">
-            <h3 class="card-title">Prova vegetarisk</h3>
+            <h3 aria-label="prova vegetarisk" class="card-title">Prova vegetarisk</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
             <a href="404.html" class="btn">Lägg i kundkorg</a>
           </div>
@@ -63,9 +63,9 @@
         <div class="card">
           <img src="https://image.freepik.com/free-psd/paper-bag-full-delicious-organic-food-diet-menu_23-2148322495.jpg" alt="bild på me">
           <div class="card-content">
-            <h3 class="card-title">Skapa din egen meny</h3>
+            <h3 aria-label="skapa din egen meny" class="card-title">Skapa din egen meny</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
-            <a href="404.html" class="btn">Lägg i kundkorg</a>
+            <a aria-label="lägg i kundkorg" href="404.html" class="btn">Lägg i kundkorg</a>
           </div>
         </div>
       </li>
@@ -75,7 +75,7 @@
      <!-- Section C -->
   <section id="section-c" class="grid">
     <div class="content-wrap">
-        <a href="betalning.html" class="btn">Gå till kassan</a>
+        <a aria-label="gå till kassan" href="betalning.html" class="btn">Gå till kassan</a>
     </div>
   </section>
    
@@ -92,3 +92,4 @@
 </body>
 
 </html>
+
